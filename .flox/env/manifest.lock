@@ -1,0 +1,535 @@
+{
+  "lockfile-version": 0,
+  "manifest": {
+    "hook": {
+      "on-activate": "export JAVA_HOME=\"$FLOX_ENV\"\nexport TESSDATA_PREFIX=\"$FLOX_ENV/share/tessdata\"\nexport AWT_FORCE_HEADFUL=true\n"
+    },
+    "install": {
+      "gradle": {
+        "pkg-path": "gradle"
+      },
+      "musescore": {
+        "pkg-path": "musescore"
+      },
+      "openjdk17": {
+        "pkg-path": "openjdk17"
+      },
+      "tesseract": {
+        "pkg-path": "tesseract"
+      }
+    },
+    "options": {
+      "allow": {
+        "broken": true
+      },
+      "systems": [
+        "x86_64-linux",
+        "x86_64-darwin",
+        "aarch64-linux",
+        "aarch64-darwin"
+      ]
+    },
+    "registry": {
+      "defaults": {
+        "subtrees": null
+      },
+      "inputs": {
+        "nixpkgs": {
+          "from": {
+            "owner": "NixOS",
+            "ref": "release-23.11",
+            "repo": "nixpkgs",
+            "type": "github"
+          },
+          "subtrees": [
+            "legacyPackages"
+          ]
+        }
+      },
+      "priority": [
+        "nixpkgs"
+      ]
+    }
+  },
+  "packages": {
+    "aarch64-darwin": {
+      "gradle": {
+        "attr-path": [
+          "legacyPackages",
+          "aarch64-darwin",
+          "gradle"
+        ],
+        "info": {
+          "broken": false,
+          "description": "Enterprise-grade build system",
+          "license": "Apache-2.0",
+          "pname": "gradle",
+          "unfree": false,
+          "version": "8.4"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1713078356,
+            "narHash": "sha256-HUcxqMR/PNljDdn+mCWdrISnqWqelXHGSKqc15KaIos=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "d161d31fd38922be72f25f519bb055d546fc7905",
+            "type": "github"
+          },
+          "fingerprint": "0bd5b7662656c159cca14dbcaa25e14894c479e75c934211106602cf191359ea",
+          "url": "github:NixOS/nixpkgs/d161d31fd38922be72f25f519bb055d546fc7905"
+        },
+        "priority": 5
+      },
+      "musescore": {
+        "attr-path": [
+          "legacyPackages",
+          "aarch64-darwin",
+          "musescore"
+        ],
+        "info": {
+          "broken": false,
+          "description": "Music notation and composition software",
+          "license": "GPL-3.0-only",
+          "pname": "musescore",
+          "unfree": false,
+          "version": "4.2.1"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1713078356,
+            "narHash": "sha256-HUcxqMR/PNljDdn+mCWdrISnqWqelXHGSKqc15KaIos=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "d161d31fd38922be72f25f519bb055d546fc7905",
+            "type": "github"
+          },
+          "fingerprint": "0bd5b7662656c159cca14dbcaa25e14894c479e75c934211106602cf191359ea",
+          "url": "github:NixOS/nixpkgs/d161d31fd38922be72f25f519bb055d546fc7905"
+        },
+        "priority": 5
+      },
+      "openjdk17": {
+        "attr-path": [
+          "legacyPackages",
+          "aarch64-darwin",
+          "openjdk17"
+        ],
+        "info": {
+          "broken": false,
+          "description": "Certified builds of OpenJDK",
+          "license": "GPL-2.0-only",
+          "pname": "zulu-ca-jdk",
+          "unfree": false,
+          "version": "17.0.8.1"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1713078356,
+            "narHash": "sha256-HUcxqMR/PNljDdn+mCWdrISnqWqelXHGSKqc15KaIos=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "d161d31fd38922be72f25f519bb055d546fc7905",
+            "type": "github"
+          },
+          "fingerprint": "0bd5b7662656c159cca14dbcaa25e14894c479e75c934211106602cf191359ea",
+          "url": "github:NixOS/nixpkgs/d161d31fd38922be72f25f519bb055d546fc7905"
+        },
+        "priority": 5
+      },
+      "tesseract": {
+        "attr-path": [
+          "legacyPackages",
+          "aarch64-darwin",
+          "tesseract"
+        ],
+        "info": {
+          "broken": false,
+          "description": "OCR engine",
+          "license": "Apache-2.0",
+          "pname": "tesseract",
+          "unfree": false,
+          "version": "5.3.3"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1713078356,
+            "narHash": "sha256-HUcxqMR/PNljDdn+mCWdrISnqWqelXHGSKqc15KaIos=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "d161d31fd38922be72f25f519bb055d546fc7905",
+            "type": "github"
+          },
+          "fingerprint": "0bd5b7662656c159cca14dbcaa25e14894c479e75c934211106602cf191359ea",
+          "url": "github:NixOS/nixpkgs/d161d31fd38922be72f25f519bb055d546fc7905"
+        },
+        "priority": 5
+      }
+    },
+    "aarch64-linux": {
+      "gradle": {
+        "attr-path": [
+          "legacyPackages",
+          "aarch64-linux",
+          "gradle"
+        ],
+        "info": {
+          "broken": false,
+          "description": "Enterprise-grade build system",
+          "license": "Apache-2.0",
+          "pname": "gradle",
+          "unfree": false,
+          "version": "8.4"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1713078356,
+            "narHash": "sha256-HUcxqMR/PNljDdn+mCWdrISnqWqelXHGSKqc15KaIos=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "d161d31fd38922be72f25f519bb055d546fc7905",
+            "type": "github"
+          },
+          "fingerprint": "0bd5b7662656c159cca14dbcaa25e14894c479e75c934211106602cf191359ea",
+          "url": "github:NixOS/nixpkgs/d161d31fd38922be72f25f519bb055d546fc7905"
+        },
+        "priority": 5
+      },
+      "musescore": {
+        "attr-path": [
+          "legacyPackages",
+          "aarch64-linux",
+          "musescore"
+        ],
+        "info": {
+          "broken": true,
+          "description": "Music notation and composition software",
+          "license": "GPL-3.0-only",
+          "pname": "musescore",
+          "unfree": false,
+          "version": "4.2.1"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1713078356,
+            "narHash": "sha256-HUcxqMR/PNljDdn+mCWdrISnqWqelXHGSKqc15KaIos=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "d161d31fd38922be72f25f519bb055d546fc7905",
+            "type": "github"
+          },
+          "fingerprint": "0bd5b7662656c159cca14dbcaa25e14894c479e75c934211106602cf191359ea",
+          "url": "github:NixOS/nixpkgs/d161d31fd38922be72f25f519bb055d546fc7905"
+        },
+        "priority": 5
+      },
+      "openjdk17": {
+        "attr-path": [
+          "legacyPackages",
+          "aarch64-linux",
+          "openjdk17"
+        ],
+        "info": {
+          "broken": false,
+          "description": "The open-source Java Development Kit",
+          "license": "GPL-2.0-only",
+          "pname": "openjdk",
+          "unfree": false,
+          "version": "17.0.7+7"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1713078356,
+            "narHash": "sha256-HUcxqMR/PNljDdn+mCWdrISnqWqelXHGSKqc15KaIos=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "d161d31fd38922be72f25f519bb055d546fc7905",
+            "type": "github"
+          },
+          "fingerprint": "0bd5b7662656c159cca14dbcaa25e14894c479e75c934211106602cf191359ea",
+          "url": "github:NixOS/nixpkgs/d161d31fd38922be72f25f519bb055d546fc7905"
+        },
+        "priority": 5
+      },
+      "tesseract": {
+        "attr-path": [
+          "legacyPackages",
+          "aarch64-linux",
+          "tesseract"
+        ],
+        "info": {
+          "broken": false,
+          "description": "OCR engine",
+          "license": "Apache-2.0",
+          "pname": "tesseract",
+          "unfree": false,
+          "version": "5.3.3"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1713078356,
+            "narHash": "sha256-HUcxqMR/PNljDdn+mCWdrISnqWqelXHGSKqc15KaIos=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "d161d31fd38922be72f25f519bb055d546fc7905",
+            "type": "github"
+          },
+          "fingerprint": "0bd5b7662656c159cca14dbcaa25e14894c479e75c934211106602cf191359ea",
+          "url": "github:NixOS/nixpkgs/d161d31fd38922be72f25f519bb055d546fc7905"
+        },
+        "priority": 5
+      }
+    },
+    "x86_64-darwin": {
+      "gradle": {
+        "attr-path": [
+          "legacyPackages",
+          "x86_64-darwin",
+          "gradle"
+        ],
+        "info": {
+          "broken": false,
+          "description": "Enterprise-grade build system",
+          "license": "Apache-2.0",
+          "pname": "gradle",
+          "unfree": false,
+          "version": "8.4"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1713078356,
+            "narHash": "sha256-HUcxqMR/PNljDdn+mCWdrISnqWqelXHGSKqc15KaIos=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "d161d31fd38922be72f25f519bb055d546fc7905",
+            "type": "github"
+          },
+          "fingerprint": "0bd5b7662656c159cca14dbcaa25e14894c479e75c934211106602cf191359ea",
+          "url": "github:NixOS/nixpkgs/d161d31fd38922be72f25f519bb055d546fc7905"
+        },
+        "priority": 5
+      },
+      "musescore": {
+        "attr-path": [
+          "legacyPackages",
+          "x86_64-darwin",
+          "musescore"
+        ],
+        "info": {
+          "broken": false,
+          "description": "Music notation and composition software",
+          "license": "GPL-3.0-only",
+          "pname": "musescore",
+          "unfree": false,
+          "version": "4.2.1"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1713078356,
+            "narHash": "sha256-HUcxqMR/PNljDdn+mCWdrISnqWqelXHGSKqc15KaIos=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "d161d31fd38922be72f25f519bb055d546fc7905",
+            "type": "github"
+          },
+          "fingerprint": "0bd5b7662656c159cca14dbcaa25e14894c479e75c934211106602cf191359ea",
+          "url": "github:NixOS/nixpkgs/d161d31fd38922be72f25f519bb055d546fc7905"
+        },
+        "priority": 5
+      },
+      "openjdk17": {
+        "attr-path": [
+          "legacyPackages",
+          "x86_64-darwin",
+          "openjdk17"
+        ],
+        "info": {
+          "broken": false,
+          "description": "Certified builds of OpenJDK",
+          "license": "GPL-2.0-only",
+          "pname": "zulu-ca-jdk",
+          "unfree": false,
+          "version": "17.0.8.1"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1713078356,
+            "narHash": "sha256-HUcxqMR/PNljDdn+mCWdrISnqWqelXHGSKqc15KaIos=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "d161d31fd38922be72f25f519bb055d546fc7905",
+            "type": "github"
+          },
+          "fingerprint": "0bd5b7662656c159cca14dbcaa25e14894c479e75c934211106602cf191359ea",
+          "url": "github:NixOS/nixpkgs/d161d31fd38922be72f25f519bb055d546fc7905"
+        },
+        "priority": 5
+      },
+      "tesseract": {
+        "attr-path": [
+          "legacyPackages",
+          "x86_64-darwin",
+          "tesseract"
+        ],
+        "info": {
+          "broken": false,
+          "description": "OCR engine",
+          "license": "Apache-2.0",
+          "pname": "tesseract",
+          "unfree": false,
+          "version": "5.3.3"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1713078356,
+            "narHash": "sha256-HUcxqMR/PNljDdn+mCWdrISnqWqelXHGSKqc15KaIos=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "d161d31fd38922be72f25f519bb055d546fc7905",
+            "type": "github"
+          },
+          "fingerprint": "0bd5b7662656c159cca14dbcaa25e14894c479e75c934211106602cf191359ea",
+          "url": "github:NixOS/nixpkgs/d161d31fd38922be72f25f519bb055d546fc7905"
+        },
+        "priority": 5
+      }
+    },
+    "x86_64-linux": {
+      "gradle": {
+        "attr-path": [
+          "legacyPackages",
+          "x86_64-linux",
+          "gradle"
+        ],
+        "info": {
+          "broken": false,
+          "description": "Enterprise-grade build system",
+          "license": "Apache-2.0",
+          "pname": "gradle",
+          "unfree": false,
+          "version": "8.4"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1713078356,
+            "narHash": "sha256-HUcxqMR/PNljDdn+mCWdrISnqWqelXHGSKqc15KaIos=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "d161d31fd38922be72f25f519bb055d546fc7905",
+            "type": "github"
+          },
+          "fingerprint": "0bd5b7662656c159cca14dbcaa25e14894c479e75c934211106602cf191359ea",
+          "url": "github:NixOS/nixpkgs/d161d31fd38922be72f25f519bb055d546fc7905"
+        },
+        "priority": 5
+      },
+      "musescore": {
+        "attr-path": [
+          "legacyPackages",
+          "x86_64-linux",
+          "musescore"
+        ],
+        "info": {
+          "broken": false,
+          "description": "Music notation and composition software",
+          "license": "GPL-3.0-only",
+          "pname": "musescore",
+          "unfree": false,
+          "version": "4.2.1"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1713078356,
+            "narHash": "sha256-HUcxqMR/PNljDdn+mCWdrISnqWqelXHGSKqc15KaIos=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "d161d31fd38922be72f25f519bb055d546fc7905",
+            "type": "github"
+          },
+          "fingerprint": "0bd5b7662656c159cca14dbcaa25e14894c479e75c934211106602cf191359ea",
+          "url": "github:NixOS/nixpkgs/d161d31fd38922be72f25f519bb055d546fc7905"
+        },
+        "priority": 5
+      },
+      "openjdk17": {
+        "attr-path": [
+          "legacyPackages",
+          "x86_64-linux",
+          "openjdk17"
+        ],
+        "info": {
+          "broken": false,
+          "description": "The open-source Java Development Kit",
+          "license": "GPL-2.0-only",
+          "pname": "openjdk",
+          "unfree": false,
+          "version": "17.0.7+7"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1713078356,
+            "narHash": "sha256-HUcxqMR/PNljDdn+mCWdrISnqWqelXHGSKqc15KaIos=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "d161d31fd38922be72f25f519bb055d546fc7905",
+            "type": "github"
+          },
+          "fingerprint": "0bd5b7662656c159cca14dbcaa25e14894c479e75c934211106602cf191359ea",
+          "url": "github:NixOS/nixpkgs/d161d31fd38922be72f25f519bb055d546fc7905"
+        },
+        "priority": 5
+      },
+      "tesseract": {
+        "attr-path": [
+          "legacyPackages",
+          "x86_64-linux",
+          "tesseract"
+        ],
+        "info": {
+          "broken": false,
+          "description": "OCR engine",
+          "license": "Apache-2.0",
+          "pname": "tesseract",
+          "unfree": false,
+          "version": "5.3.3"
+        },
+        "input": {
+          "attrs": {
+            "lastModified": 1713078356,
+            "narHash": "sha256-HUcxqMR/PNljDdn+mCWdrISnqWqelXHGSKqc15KaIos=",
+            "owner": "NixOS",
+            "repo": "nixpkgs",
+            "rev": "d161d31fd38922be72f25f519bb055d546fc7905",
+            "type": "github"
+          },
+          "fingerprint": "0bd5b7662656c159cca14dbcaa25e14894c479e75c934211106602cf191359ea",
+          "url": "github:NixOS/nixpkgs/d161d31fd38922be72f25f519bb055d546fc7905"
+        },
+        "priority": 5
+      }
+    }
+  },
+  "registry": {
+    "defaults": {
+      "subtrees": null
+    },
+    "inputs": {
+      "nixpkgs": {
+        "from": {
+          "lastModified": 1713078356,
+          "narHash": "sha256-HUcxqMR/PNljDdn+mCWdrISnqWqelXHGSKqc15KaIos=",
+          "owner": "NixOS",
+          "repo": "nixpkgs",
+          "rev": "d161d31fd38922be72f25f519bb055d546fc7905",
+          "type": "github"
+        },
+        "subtrees": [
+          "legacyPackages"
+        ]
+      }
+    },
+    "priority": [
+      "nixpkgs"
+    ]
+  }
+}

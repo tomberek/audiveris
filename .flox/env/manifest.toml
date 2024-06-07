@@ -1,0 +1,16 @@
+[install]
+openjdk17.pkg-path = "openjdk17"
+gradle.pkg-path = "gradle"
+tesseract.pkg-path = "tesseract"
+musescore.pkg-path = "musescore"
+
+[hook]
+on-activate = """
+export JAVA_HOME="$FLOX_ENV"
+export TESSDATA_PREFIX="$FLOX_ENV/share/tessdata"
+export AWT_FORCE_HEADFUL=true
+"""
+
+[options]
+systems = ["x86_64-linux","x86_64-darwin","aarch64-linux","aarch64-darwin"]
+allow = {broken = true}
